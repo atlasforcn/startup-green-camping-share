@@ -1,5 +1,21 @@
 # 營享-綠色露營共享平台
 
+## 快速看懂
+
+![startup-green-camping-share 功能截圖](docs/preview.png)
+
+- 線上 Demo：https://atlasforcn.github.io/startup-green-camping-share/
+- 這個原型在做什麼：把營享做成綠色露營用品共享與行程媒合平台。
+- 特色定位：特色是同時處理裝備租借、營地日期、押金清潔與碳減量估算。
+- 操作流程：搜尋營地日期與可租裝備 → 調整裝備數量並查看押金/清潔狀態 → 估算共享帶來的碳減量並完成行前清單
+
+<details>
+<summary>展開完整功能流程截圖</summary>
+
+![startup-green-camping-share 完整功能流程截圖](docs/flow.png)
+
+</details>
+
 這是一個可直接用瀏覽器開啟的靜態 demo repo，將「營享-綠色露營共享平台」做成可操作的綠色露營用品共享與行程媒合原型。介面以戶外地圖、裝備庫存、押金清潔管理與出租者工作台為主，不是單純介紹頁。
 
 ## 比賽與來源資訊
@@ -46,4 +62,3 @@
 ```bash
 node --check app.js
 ```
-
