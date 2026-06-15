@@ -11,6 +11,40 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <!-- repo-snapshot:start -->
+    <section class="repo-snapshot repo-snapshot--map" aria-label="專案辨識預覽：營享" style="--snap-bg: #102119; --snap-bg-2: #274535; --snap-ink: #f5fbef; --snap-muted: #c5d4c8; --snap-accent: #73c96b; --snap-accent-2: #f0a33a;">
+      <div class="snapshot-copy">
+        <p class="snapshot-kicker">Low-impact camping</p>
+        <div class="snapshot-name">營享</div>
+        <p class="snapshot-tagline">共享裝備、營位媒合與低碳行程排程，第一屏要像一張可操作的露營地圖。</p>
+        <div class="snapshot-chips" aria-label="核心辨識元素">
+        <span>共享裝備</span>
+        <span>營位媒合</span>
+        <span>碳足跡</span>
+        </div>
+      </div>
+      <div class="snapshot-scene" aria-hidden="true">
+        <div class="snapshot-device">
+          <div class="snapshot-device-head">
+            <span>Camp share map</span>
+            <strong>溪邊營位可借 6 件</strong>
+          </div>
+          <div class="snapshot-visual snapshot-visual--map">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="snapshot-data-row">
+          <span><b>6</b>裝備</span>
+          <span><b>2.4kg</b>減碳</span>
+          <span><b>3</b>營位</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- repo-snapshot:end -->
+    <div class="demo-boundary" role="note">
+      <strong>Prototype</strong>
+      <span>靜態互動原型；畫面資料、評分、AI、金流、醫療、法律與安全流程皆為示範，不代表原團隊官方產品或實際服務。</span>
+    </div>
     <header class="topbar" id="top">
       <a class="brand" href="#top" aria-label="回到營享首頁">
         <span class="brand-mark">營</span>
@@ -28,12 +62,18 @@
     </header>
 
     <main>
-      <section class="source-ribbon" aria-label="比賽來源資訊">
-        <span>大專校院創新創業實戰模擬學習平臺</span>
-        <span>112 年（2023）</span>
-        <span>第二梯次成功案例</span>
-        <span>無限行｜中國科技大學｜服務文創</span>
-      </section>
+      <details class="source-ribbon source-disclosure" aria-label="比賽來源資訊">
+        <summary>
+          <span>公開來源</span>
+          <strong>112 年第二梯次成功案例｜無限行</strong>
+        </summary>
+        <div class="source-ribbon-body">
+          <span>大專校院創新創業實戰模擬學習平臺</span>
+          <span>112 年（2023）</span>
+          <span>第二梯次成功案例</span>
+          <span>無限行｜中國科技大學｜服務文創</span>
+        </div>
+      </details>
 
       <section class="command-board" id="search">
         <div class="map-desk">
@@ -237,28 +277,30 @@
           <div class="reviews" id="reviews"></div>
         </section>
 
-        <section class="tool-panel source-panel" id="source" aria-labelledby="sourceTitle">
-          <div class="section-title">
-            <p class="eyebrow">來源與聲明</p>
-            <h2 id="sourceTitle">公開案例延伸原型</h2>
+        <details class="tool-panel source-panel source-disclosure" id="source" aria-labelledby="sourceTitle">
+          <summary>
+            <span class="eyebrow">來源與聲明</span>
+            <strong id="sourceTitle">公開案例延伸原型</strong>
+          </summary>
+          <div class="source-body">
+            <dl class="source-list">
+              <div><dt>比賽來源</dt><dd>大專校院創新創業實戰模擬學習平臺</dd></div>
+              <div><dt>年度</dt><dd>112 年（2023）</dd></div>
+              <div><dt>屆次/階段</dt><dd>第二梯次成功案例</dd></div>
+              <div><dt>團隊/公司</dt><dd>無限行</dd></div>
+              <div><dt>學校</dt><dd>中國科技大學</dd></div>
+              <div><dt>類別</dt><dd>服務文創</dd></div>
+              <div><dt>作品名稱</dt><dd>營享-綠色露營共享平台</dd></div>
+              <div>
+                <dt>官方來源</dt>
+                <dd><a href="https://ssp.moe.gov.tw/cases/657">https://ssp.moe.gov.tw/cases/657</a></dd>
+              </div>
+            </dl>
+            <p class="disclaimer">
+              免責聲明：這是依公開得獎資訊與概念自行製作的興趣原型，不是原團隊官方 demo 或產品。
+            </p>
           </div>
-          <dl class="source-list">
-            <div><dt>比賽來源</dt><dd>大專校院創新創業實戰模擬學習平臺</dd></div>
-            <div><dt>年度</dt><dd>112 年（2023）</dd></div>
-            <div><dt>屆次/階段</dt><dd>第二梯次成功案例</dd></div>
-            <div><dt>團隊/公司</dt><dd>無限行</dd></div>
-            <div><dt>學校</dt><dd>中國科技大學</dd></div>
-            <div><dt>類別</dt><dd>服務文創</dd></div>
-            <div><dt>作品名稱</dt><dd>營享-綠色露營共享平台</dd></div>
-            <div>
-              <dt>官方來源</dt>
-              <dd><a href="https://ssp.moe.gov.tw/cases/657">https://ssp.moe.gov.tw/cases/657</a></dd>
-            </div>
-          </dl>
-          <p class="disclaimer">
-            免責聲明：這是依公開得獎資訊與概念自行製作的興趣原型，不是原團隊官方 demo 或產品。
-          </p>
-        </section>
+        </details>
       </section>
     </main>
 
@@ -266,4 +308,3 @@
     <script src="app.js"></script>
   </body>
 </html>
-
